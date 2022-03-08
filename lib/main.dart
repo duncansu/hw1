@@ -3,9 +3,12 @@ import 'package:flutter/material.dart';
 void main() {
   var appTitle =Text('my first app'),
       hiflutter =Text('Hi flutter ',style: TextStyle(fontSize: 50),);
-  var appBody=Center(child:hiflutter,);
-  var appBar=AppBar(title:appTitle,);
-  var app=MaterialApp(home:Scaffold(appBar: appBar,body:appBody));
+  var appBody=Center(child:hiflutter,
+        );
+  var appBar=AppBar(title:appTitle,
+  backgroundColor: Colors.orangeAccent,
+  );
+  var app=MaterialApp(home:Scaffold(appBar: appBar,body:appBody,backgroundColor: Colors.orange,));
 
 
 
