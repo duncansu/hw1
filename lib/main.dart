@@ -2,10 +2,24 @@ import 'package:flutter/material.dart';
 
 void main() {
   var appTitle =Text('my first app'),
-      hiflutter =Text('Hi flutter \n 今天是20220308',style: TextStyle(fontSize: 50,color: Colors.red,decoration :TextDecoration.lineThrough),maxLines: 2,);
+      hiflutter =Text('Hi flutter \n 今天是20220314',style: TextStyle(fontSize: 20,color: Colors.red,decoration :TextDecoration.lineThrough),maxLines: 2,);
   var img =Image.network("https://ch-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fas.chdev.tw%2Fweb%2Farticle%2Fb%2F0%2F4%2Fb1814323-0790-4b70-a3b1-6cbc87d37d1f%2FA0951616.jpg/?w=561");
-  var appBody=Center(child:img,
-        );
+  var appBody=Container(
+    child:hiflutter,
+        alignment: Alignment.topLeft,
+        margin: EdgeInsets.all(50),
+        color: Colors.white,
+        padding: EdgeInsets.fromLTRB(50, 0, 50, 100),
+
+
+      // child: Container(
+      //     margin: const EdgeInsets.all(10.0),
+      //     color: Colors.red,
+      //     width: 100.0,
+      //     height: 100.0,
+      //
+      // )
+           );
   var appBar=AppBar(title:appTitle,
   backgroundColor: Colors.blueAccent,
   );
